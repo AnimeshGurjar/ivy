@@ -226,17 +226,22 @@ Defaults to second axis (1).</p>
 
 <dl class="py function">
 <dt id="ivy.functional.ivy.array_api.linear_algebra.slodget">
-<code class="sig-prename descclassname">ivy.functional.ivy.array_api.linear_algebra.</code><code class="sig-name descname">slodget</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/ivy/functional/ivy/array_api/linear_algebra.html#slodget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ivy.functional.ivy.array_api.linear_algebra.slodget" title="Permalink to this definition">¶</a></dt>
-<dd><p>Compute the sign and natural logarithm of the determinant of an array.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>x</strong> (<em>Array</em>) – This is a 2D array, and it has to be square</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>slogdet() function returns two values - sign and the natural log of
-the absolute value of the determinant of matrix x</p>
+<code class="sig-prename descclassname">ivy.functional.ivy.array_api.linear_algebra.</code><code class="sig-name descname">slodget</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span><span class="p">:</span> <span class="n">Union<span class="p">[</span>ivy.array.Array<span class="p">, </span>ivy.NativeArray<span class="p">]</span></span></em><span class="sig-paren">)</span> &#x2192; ivy.array.Array<a class="reference internal" href="../../../_modules/ivy/functional/ivy/array_api/linear_algebra.html#slodget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ivy.functional.ivy.array_api.linear_algebra.slodget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the sign and natural logarithm of the determinant of an array.</p>
+<dl class="simple">
+<dt>x:</dt><dd><p>This is a 2D array, and it has to be square</p>
 </dd>
 </dl>
+<p>Out:</p>
+<blockquote>
+<div><dl>
+<dt>This function returns two values -</dt><dd><p>sign:
+A number representing the sign of the determinant.</p>
+<p>logdet:
+The natural log of the absolute value of the determinant.</p>
+</dd>
+</dl>
+</div></blockquote>
 </dd></dl>
 
 <dl class="py function">
